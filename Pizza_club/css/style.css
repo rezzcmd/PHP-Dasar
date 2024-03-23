@@ -1,0 +1,597 @@
+body {
+    font-family: 'Montserrat';
+}
+
+
+.navbar {
+    background-color: #fff;
+    /* width: 1409px; */
+    height: 96px;
+    color: #000000;
+}
+
+.nav-item {
+    font-family: 'inter';
+    font-weight: 400, bold;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.nav-item.active a {
+    color: #FF930D !important;
+    font-weight: 600;
+}
+
+.navbar-set {
+    box-shadow: 0px 3px 15px 0px #D3D3D340;
+
+}
+
+.nav-text {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #121212;
+    margin-left: 0%;
+
+
+}
+
+.btn-menu {
+    padding: 8px 12px !important;
+    font-weight: 400 !important;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.breadcrumb {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.breadcrumb-item.active {
+
+    color: #FF930D;
+}
+
+/* Carousel */
+
+
+@media only screen and (max-width: 767px) {
+
+    /* For mobile phones: */
+    .img-carousel {
+        display: none;
+    }
+}
+
+
+.carousel {
+    /* width: 1409px; */
+    height: 460px;
+    top: 96px;
+    background-color: #FFFBC8;
+    color: #121212;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: #6F6F6F;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: #6F6F6F;
+}
+
+.carousel h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.88px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    font-family: Inter;
+    font-weight: 200;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel p {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #6F6F6F;
+}
+
+.menu-terlaris {
+    margin-top: 110px;
+}
+
+
+.menu-terlaris h3,
+.features h3,
+.olshop h3,
+.menu-lainnya h3,
+.cart-header h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #121212;
+}
+
+.menu-terlaris p,
+.features p,
+.menu-lainnya p,
+.cart-header p {
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #6F6F6F;
+}
+
+.card-food {
+    height: auto;
+}
+
+.figure {
+    background-color: #FFF6EC;
+    width: 100%;
+    min-height: 290px !important;
+    top: 862px;
+    left: 130px;
+    border-radius: 20px;
+    margin-top: 80px;
+
+
+}
+
+.figure-single {
+    max-width: 376px !important;
+    max-height: 376px;
+    border-radius: 20px;
+}
+
+
+.figure-img {
+    position: relative;
+}
+
+.figure-img img {
+    /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); */
+    /* transform: translateY(-85px); */
+    margin-top: -50px;
+
+}
+
+
+.figure figcaption h5 {
+    font-family: 'inter';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26.63px;
+    color: #121212;
+}
+
+.figure figcaption p {
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 16.94px;
+    color: #4F4F4F;
+}
+
+.figure figcaption span {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #FF930D;
+}
+
+.features h4 {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+
+}
+
+.olshop {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* For mobile phones: */
+    .small-center {
+        text-align: center;
+    }
+}
+
+
+.olshop p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    color: #6F6F6F;
+
+}
+
+.title-footer {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #121212;
+
+
+}
+
+.title-subfoot {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #6F6F6F;
+}
+
+.title-sub-foot,
+a {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #6F6F6F;
+
+}
+
+.copyright p {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #6F6F6F;
+
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #FF930D;
+    border-color: #FF930D;
+    padding: 18px 24px;
+    font-family: 'inter';
+    font-size: 18px;
+    line-height: 21.78px;
+
+}
+
+.btn-outline-warning {
+
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 18px 24px;
+    border-radius: 10px;
+    border-width: 2px;
+    color: #FF930D;
+
+
+
+
+}
+
+/* Layanan */
+.card-layanan {
+    margin-left: 100px;
+    background: #FFBB67;
+    border-radius: 20px;
+    border: 0px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #121212
+}
+
+.card-layanan p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #121212;
+}
+
+.card-layanan .left-sec {
+    margin-left: -115px;
+    margin-right: 10px;
+}
+
+.card-layanan .card-body {
+    padding-left: -100px;
+}
+
+.tab-content p {
+
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #6F6F6F;
+
+}
+
+.tab-content {
+    border-radius: 0px, 10px, 10px, 10px;
+    box-shadow: 0px 8px 15px 0px #E6E6E640;
+
+
+}
+
+.nav-link-review.active,
+.judul-alamat {
+
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #121212;
+    border-radius: 10px, 10px, 0px, 0px;
+
+
+}
+
+.nav-link-review {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #6F6F6F;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+
+.nav-item-tab {
+    background-color: #E6E6E6;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+}
+
+.nav-tabs,
+.nav-link {
+    border-radius: 10px 10px 0px 0px !important;
+    border: unset;
+}
+
+
+
+.review-product h5 {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #6F6F6F;
+
+}
+
+.review-product p {
+
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #6F6F6F;
+}
+
+.menu-lain {
+
+    width: 100%;
+    height: 243px;
+    top: 1400px;
+    left: 130px;
+    border-radius: 20px;
+    background-color: #FAFAFA;
+
+
+}
+
+.title-product {
+    font-family: 'Inter';
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    color: #121212;
+}
+
+.subtitle-product {
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #FF930D;
+    margin-top: 18px;
+
+}
+
+.qty {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #4F4F4F;
+
+}
+
+.title-co {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #121212;
+
+}
+
+.sub-title-co {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #FF930D;
+    margin-top: -18px;
+}
+
+.sub-sub-co {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #6F6F6F;
+    margin-top: -32px;
+
+}
+
+.input-qty {
+
+    max-width: 40px;
+}
+
+.judul-co,
+.checkout-detail h5 {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #121212;
+
+}
+
+.data-pengiriman {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+
+
+}
+
+.data-pengiriman option {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    color: #BDBDBD;
+
+
+}
+
+.checkout-detail {
+    border-radius: 10px;
+    background-color: #FAFAFA;
+
+}
+
+.checkout-detail h6 {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #121212;
+
+}
+
+.checkout-detail h5 {
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #121212;
+
+}
+
+.checkout-detail small {
+
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+
+
+}
+
+.btn-block {
+    border-radius: 10px;
+
+}
+
+.border-co {
+    border-width: 2px;
+}
+
+
+.modal-body h3 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #121212;
+}
+
+.modal-lable {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 58px;
+    color: #121212;
+}
+
+.button-login {
+    width: 351px;
+    height: 60px;
+    border-radius: 10px;
+
+}
+
+.input-login {
+    width: 351px;
+}
+
+
+.modal-body p {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #6F6F6F;
+}
+
+.modall {
+    width: 224px;
+    height: 60px;
+    border-radius: 10px;
+
+}

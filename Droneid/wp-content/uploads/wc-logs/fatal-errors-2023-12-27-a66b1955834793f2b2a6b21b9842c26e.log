@@ -1,0 +1,15 @@
+2023-12-27T04:13:05+00:00 CRITICAL Uncaught Error: Attempt to assign property "page_template" on null in D:\xampp\htdocs\Droneid\wp-includes\post.php:4635
+Stack trace:
+#0 D:\xampp\htdocs\Droneid\wp-includes\post.php(4862): wp_insert_post(Array, false, true)
+#1 D:\xampp\htdocs\Droneid\wp-admin\includes\post.php(1974): wp_update_post(Array)
+#2 D:\xampp\htdocs\Droneid\wp-content\plugins\elementor\core\base\document.php(553): wp_create_post_autosave(Array)
+#3 D:\xampp\htdocs\Droneid\wp-content\plugins\elementor\core\documents-manager.php(530): Elementor\Core\Base\Document->get_autosave(1, true)
+#4 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 D:\xampp\htdocs\Droneid\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 D:\xampp\htdocs\Droneid\wp-includes\class-wp-hook.php(324): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#7 D:\xampp\htdocs\Droneid\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#8 D:\xampp\htdocs\Droneid\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 D:\xampp\htdocs\Droneid\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#10 {main}
+  thrown in D:\xampp\htdocs\Droneid\wp-includes\post.php on line 4635
+
