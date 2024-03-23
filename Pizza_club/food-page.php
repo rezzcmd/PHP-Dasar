@@ -227,7 +227,6 @@
 
     <!-- Menu Lainnya -->
 
-
     <div class="container-fluid menu-lainnya">
         <div class="menu">
             <div class="row p-5 text-center">
