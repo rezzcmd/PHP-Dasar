@@ -27,6 +27,8 @@
 
     <!-- Navbar -->
     <?php include "Layout/navbar.html" ?>
+    <?php include "login.php" ?>
+    <?php include "register.php" ?>
     <!-- Akhir Navbar -->
 
 
