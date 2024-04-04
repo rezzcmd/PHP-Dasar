@@ -1,16 +1,26 @@
-<?php include "service/database.php"?>
 <?php 
+    include "service/database.php";
+
+    $register_message = "";
+
  if(isset($_POST["register"])){
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $sql = "INSERT INTO users (username, password) VALUES
-       ('$username', '$password')";
+    $hash_password = hash("sha256", $password);
 
- if($db->query($sql)) {
-    echo "OK MANTAP DATA MASUK";
- }else {
-    echo "DATA GAGAL MASUK";
-}
+    try {
+        $sql = "INSERT INTO users (username, password) VALUES
+       ('$username', '$hash_password')";
+
+       if($db->query($sql)) {
+            $register_message = "daftar akun berhasil, silahkan login";
+       }else {
+            $register_message = "daftar akun gagal,silahkan coba lagi";
+       }
+    }catch (mysqli_sql_exception) {
+        $register_message = "username sudah digunakan";
+       }
+       $db->close();
 
     
 }
@@ -51,6 +61,7 @@
                 <img src="img/modal/2.svg" alt="register">
                 <form action="register.php" method="POST">
                     <h3 class="pt-5 pb-3" style="line-height: 40px !important;">Buat Akun Anda</h3>
+                    <i><?= $register_message ?></i>
                     <div class="container modal-lable">
                         <label for="username">Email</label> <br>
                         <input class="input-login" type="text" placeholder="Masukan email anda" name="username"

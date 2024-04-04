@@ -2,21 +2,30 @@
 
 <?php 
     include "service/database.php";
+    session_start();
+
+    $login_message = "";
 
     if(isset($_POST['login'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $hash_password = hash('sha256', $password);
 
         $sql = "SELECT * FROM users WHERE
-        username= '$username' AND password='$password'";
+        username= '$username' AND password='$hash_password'";
 
         $result = $db->query($sql);
 
         if($result->num_rows > 0) {
-            echo "datanya ada";
+            $data = $result->fetch_assoc();
+            $_SESSION["username"] = $data["username"];
+            $_SESSION["is_login"] = true;
+
+            header("location: dashboard.php");
         }else {
-            echo "akun tidak ditemukan";
+            $login_message = "akun tidak ditemukan";
         }
+        $db->close();
     }
 ?>
 
@@ -58,6 +67,7 @@
                 <img src="img/modal/2.svg" alt="login">
                 <form action="login.php" method="POST">
                     <h3 class="pt-5 pb-3" style="line-height: 40px !important;">Masuk ke Akun Anda</h3>
+                    <i><?= $login_message ?></i>
                     <div class="container modal-lable">
                         <label for="username">Email</label> <br>
                         <input class="input-login" type="text" placeholder="Masukan email anda" name="username"
