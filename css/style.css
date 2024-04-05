@@ -284,6 +284,15 @@ a {
 
 }
 
+.btn-primary {
+    color: #fff;
+    padding: 18px 24px;
+    font-family: 'inter';
+    font-size: 18px;
+    line-height: 21.78px;
+
+}
+
 .btn-outline-warning {
 
     font-family: 'Inter';
