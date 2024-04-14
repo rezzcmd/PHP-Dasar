@@ -26,7 +26,6 @@
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,49 +34,30 @@
     <title>Document</title>
 </head>
 <body>
- <div class="modal fade register" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-set"
-                style="box-shadow: rgba(211, 211, 211, 0.25);">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav text-uppercase mx-auto">
-                            <li class="nav-item active">
-                                <a class="navbar-brand" href="index.php">
-                                    <img src="img/logo1.png" alt="Pizza_club">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="modal-body text-center">
+    <div class="container justify-content-center">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.php">
+           <img src="img/logo1.png" class="d-inline-block align-top" alt="Pizza_club">
+        </a>
+      </nav>
+      <div class="modal-body text-center">
                 <img src="img/modal/2.svg" alt="register">
-                <form action="register.php" method="POST">
-                    <h3 class="pt-5 pb-3" style="line-height: 40px !important;">Buat Akun Anda</h3>
+                <form class="align-self-center" action="register.php" method="POST">
+                    <h3 class="pt-5 pb-3">Buat Akun Anda</h3>
                     <i><?= $register_message ?></i>
-                    <div class="container modal-lable">
+                    <div class="container">
                         <label for="username">Email</label> <br>
-                        <input class="input-login" type="text" placeholder="Masukan email anda" name="username"
+                        <input class="input-register" type="text" placeholder="Masukan email anda" name="username"
                             required> <br><br>
                         <label for="password">Password</label> <br>
-                        <input class="input-login" type="password" placeholder="Buat Password anda" name="password"
-                            required> <br><br><br><br>
-                        <button type="submit" name="register"
-                            class="btn btn-primary button-login mb-4">Register</button>
+                        <input class="input-register" type="password" placeholder="Masukan Password anda" name="password"
+                            required> <br><br><br>
+                        <button type="submit" name="register" class="btn btn-primary button-register mb-4">register</button>
                     </div>
                 </form>
 
             </div>
-        </div>
     </div>
- </div>    
+
 </body>
 </html>
-
