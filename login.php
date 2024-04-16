@@ -1,5 +1,4 @@
 <!-- php login -->
-
 <?php 
     include "service/database.php";
     session_start();
@@ -21,7 +20,7 @@
             $_SESSION["username"] = $data["username"];
             $_SESSION["is_login"] = true;
 
-            header("location: dashboard.php");
+            header("location: index.php");
         }else {
             $login_message = "akun tidak ditemukan";
         }

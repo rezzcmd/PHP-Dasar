@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if( !isset($_SESSION["is_login"])) {
+    header("location: login.php");
+    exit;
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -25,9 +36,7 @@
 
 <body>
  <!-- Navbar -->
- <?php include "Layout/navbar.html" ?>
- <?php include "login.php" ?>
- <?php include "register.php" ?>
+ <?php include "Layout/navbar2.html" ?>
     <!-- Akhir Navbar -->
 
 
